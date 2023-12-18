@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url('https://geology.com/world/world-map.gif');
+    background-position: center center;
+    background-size: cover; /* Set the image to cover all the div */
+    background-repeat: no-repeat; /* Commonly used for that situation */
+}
+
+aside {
+    overflow-y: scroll;
+    height: 100vh;
+    width: 200px;
+    background-color: grey;
+    color: #fff;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+aside::-webkit-scrollbar {
+    width: 6px;
+}
+
+aside::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+aside::-webkit-scrollbar-thumb {
+    /* background-color: hsl(215, 21%, 72%); */
+    background-color: hsl(0, 0%, 70%);
+    border-radius: 20px;
+}
+
+button {
+    padding-block: 0.5rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
